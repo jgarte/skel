@@ -1,0 +1,137 @@
+function profile-location()
+{
+	echo $HOME/.other-guix-profiles/$1
+}
+
+function profile-exists()
+{
+	if test -L $(profile-location $1)
+		then return 0
+		else return 1
+	fi
+}
+
+function load-profile()
+{
+	if test -n "$1" && profile-exists $1;
+	then
+	      	GUIX_PROFILE=$HOME/.other-guix-profiles/$1
+		source $GUIX_PROFILE/etc/profile
+                if test -d "$GUIX_PROFILE/etc/profile.d"
+                then
+                  for script in `find "$GUIX_PROFILE/etc/profile.d" -type f`
+                  do
+                    source $script
+                  done
+                fi
+                if test -d "$GUIX_PROFILE/etc/bash_completion.d"
+                then
+                  for script in `find "$GUIX_PROFILE/etc/bash_completion.d" -type f`
+                  do
+                    echo $script
+                    source $script
+                  done
+                fi
+	      	export XDG_DATA_DIRS=${GUIX_PROFILE}/share${XDG_DATA_DIRS:+:}$XDG_DATA_DIRS
+	      	export MANPATH=${GUIX_PROFILE}/share/man${MANPATH:+:}$MANPATH
+	      	export INFOPATH=${GUIX_PROFILE}/share/info${INFOPATH:+:}$INFOPATH
+	else
+		echo $1 not found.
+		echo The following profiles are available:
+		list-profiles
+		echo
+	fi
+}
+
+function list-profiles()
+{
+	guix package --list-profiles | grep --color=never other-guix-profiles | cut -d/ -f5- | xargs -s80
+}
+
+function list-packages()
+{
+	if test -n "$1"
+	then
+		guix package -p $HOME/.other-guix-profiles/$1 -I | cut -f1,3 --output-delimiter=: | sort | xargs -s80
+	else
+		guix package -I | cut -f1 | xargs -s80
+	fi
+}
+
+function install-to()
+{
+	profile=$(profile-location $1)
+	shift
+	echo $@ | xargs -n1 guix install -p $profile
+}
+
+function remove-from()
+{
+	profile=$(profile-location $1)
+	shift
+	echo $@ | xargs -n1 guix remove -p $profile
+}
+
+function upgrade-all()
+{
+	guix pull
+	guix package --list-profiles | xargs -n1 bash -c 'echo $0; guix upgrade -p $0'
+}
+function can-upgrade()
+{
+	if guix weather $1 >&2 && guix build $1
+	then
+		echo "finally upgrading $1!">&2
+	else
+		echo "--do-not-upgrade=$1"
+	fi
+}
+function quick-upgrade()
+{
+	guix pull
+	options="$(for pkg in ungoogled-chromium texlive
+do can-upgrade $pkg
+done | xargs)"
+echo options
+exit
+	for profile in $(guix package --list-profiles)
+	do
+		guix package -p $profile $options -u
+	done
+}
+function cleanup()
+{
+	for profile in $(guix package --list-profiles)
+	do
+		echo $profile
+		guix package --delete-generations=1m -p $profile
+	done
+	guix gc --free-space=250G
+}
+function log-time()
+{
+    date  "+in=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log
+    time guix environment;
+    date "+out=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log
+}
+
+function make-manifest()
+{
+  profile=$1
+  echo ";$profile"
+  echo '(specifications->manifest'
+  echo '(map symbol->string'
+  echo "'("
+  for package in `list-packages $profile`
+  do
+    echo $package
+  done
+  echo ')))'
+}
+
+#export GUIX_PACKAGE_PATH=$HOME/Documents/programming/guix_development/packages
+
+alias build='guix build'
+
+export -f profile-location profile-exists load-profile list-profiles list-packages install-to remove-from upgrade-all can-upgrade quick-upgrade cleanup log-time make-manifest
+
