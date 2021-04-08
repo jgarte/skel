@@ -1,0 +1,14 @@
+download-path ~/newsboat/%n/
+player "~/.newsboat/listen.sh"
+download-filename-format %F-%H-%M-%S.%e
+podlist-format "%5i %5dMB/%5tMB (%6p%%) %10K %9S %F"
+article-sort-order date asc
+user-agent "nonayur/815.n355-1053r"
+color background        white   black
+color listnormal        white   black
+color listfocus         black   white
+color listnormal_unread white   black
+color listfocus_unread  black   white bold
+color info              white   green bold
+color article           white   black
+
