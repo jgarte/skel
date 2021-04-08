@@ -1,0 +1,26 @@
+#info
+\e abort-key
+h   backward-char
+b   backward-word
+0   beginning-of-line
+g   beginning-of-node
+dc   describe-command
+dk   describe-key
+dv   describe-variable
+G   end-of-node
+:   execute-command
+l   forward-char
+e   forward-word
+/   search
+n   search-next
+N   search-previous
+?   search-backward
+dm   man
+j   next-line
+>   next-node
+k   prev-line
+<   prev-node
+:q  quit
+^l  redraw-display
+J   scroll-forward
+K   scroll-backward
