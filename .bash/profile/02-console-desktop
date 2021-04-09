@@ -4,7 +4,7 @@ then
 	do
 		load-profile $x
 	done
-	export BROWSER=chromium
+	export BROWSER=icecat
 	export EDITOR=vim
 
 #anki & disown
