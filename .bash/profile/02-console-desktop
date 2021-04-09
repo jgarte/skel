@@ -5,7 +5,6 @@ then
 		load-profile $x
 	done
 	export BROWSER=chromium
-	export FONTCONFIG_FILE=$HOME/.fonts.conf
 	export EDITOR=vim
 
 #anki & disown
