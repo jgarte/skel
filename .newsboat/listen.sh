@@ -2,9 +2,9 @@ play()
 {
 	if test -v XAUTHORITY;
 	then
-		vlc --quiet "$@" &
+		vlc --quiet "$@" "vlc://quit" &
 	else
-		rvlc "$@"
+		rvlc "$@" "vlc://quit"
 	fi
 }
 file=`echo "$@" | sed -e "s/%27/'/";`
