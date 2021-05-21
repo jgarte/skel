@@ -4,7 +4,8 @@ play()
 	then
 		vlc --quiet "$@" "vlc://quit" &
 	else
-		rvlc "$@" "vlc://quit"
+      mplayer "$@"
+		#rvlc "$@" "vlc://quit"
 	fi
 }
 file=`echo "$@" | sed -e "s/%27/'/";`
