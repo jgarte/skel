@@ -1,0 +1,29 @@
+function umount-network(){
+echo link;
+umount ~/Documents/link
+umount ~/Documents/toon-link
+umount ~/Documents/mario
+umount ~/Documents/luigi
+umount ~/Documents/mobian
+}
+function mount-network(){
+  echo link;
+  sshfs admin@link.local:yt/ ~/Documents/link;
+
+  echo toon-link;
+  sshfs admin@toon-link.local:newsboat ~/Documents/toon-link;
+
+  echo mario;
+  sshfs pi@mario.local: ~/Documents/mario;
+
+  echo luigi;
+  sshfs pi@luigi.local:webdev330 ~/Documents/luigi;
+
+  echo mobian;
+  sshfs mobian@mobian.local: ~/Documents/mobian;
+}
+function start-web-server()
+{
+  ssh pi@luigi.local sudo ./start-web-server.sh
+}
+export -f mount-network;
