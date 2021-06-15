@@ -24,7 +24,7 @@ function mount-network(){
 }
 function start-web-server()
 {
-  ssh pi@luigi.local sudo ./start-web-server.sh
+  ssh pi@luigi.local sudo ./start-web-server.sh;
 }
 export -f mount-network;
 export -f start-web-server;
