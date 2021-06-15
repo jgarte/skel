@@ -47,7 +47,7 @@ function load-profile()
 
 function list-profiles()
 {
-	guix package --list-profiles | grep --color=never other-guix-profiles | cut -d/ -f5- | xargs -s80
+  guix package --list-profiles | grep --color=never other-guix-profiles | cut -d/ -f5- | xargs -s80
 }
 
 function list-packages()
