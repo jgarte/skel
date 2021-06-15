@@ -112,9 +112,9 @@ function cleanup()
 }
 function log-time()
 {
-    date  "+in=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log
-    time guix environment;
-    date "+out=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log
+  date  "+in=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log;
+  time guix environment;
+  date "+out=%s=%Y/%m/%d %H:%M:%S.%N" >> ~/Documents/senior-project/.time-log;
 }
 
 function make-manifest()
