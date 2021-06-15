@@ -52,12 +52,12 @@ function list-profiles()
 
 function list-packages()
 {
-	if test -n "$1"
-	then
-		guix package -p $HOME/.other-guix-profiles/$1 -I | cut -f1,3 --output-delimiter=: | sort | xargs -s80
-	else
-		guix package -I | cut -f1 | xargs -s80
-	fi
+  if test -n "$1";
+  then
+    guix package -p $HOME/.other-guix-profiles/$1 -I | cut -f1,3 --output-delimiter=: | sort | xargs -s80
+  else
+    guix package -I | cut -f1 | xargs -s80;
+  fi
 }
 
 function install-to()
