@@ -90,16 +90,16 @@ function can-upgrade()
 }
 function quick-upgrade()
 {
-	guix pull
-	options="$(for pkg in ungoogled-chromium texlive
-do can-upgrade $pkg
-done | xargs)"
-echo options
-exit
-	for profile in $(guix package --list-profiles)
-	do
-		guix package -p $profile $options -u
-	done
+  guix pull;
+  options="$(for pkg in ungoogled-chromium texlive;
+  do can-upgrade $pkg;
+  done | xargs)";
+  echo options;
+  exit;
+  for profile in $(guix package --list-profiles);
+  do
+    guix package -p $profile $options -u;
+  done;
 }
 function cleanup()
 {
