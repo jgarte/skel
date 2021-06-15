@@ -103,12 +103,12 @@ function quick-upgrade()
 }
 function cleanup()
 {
-	for profile in $(guix package --list-profiles)
-	do
-		echo $profile
-		guix package --delete-generations=1m -p $profile
-	done
-	guix gc --free-space=250G
+  for profile in $(guix package --list-profiles);
+  do
+    echo $profile;
+  guix package --delete-generations=1m -p $profile;
+  done;
+  guix gc --free-space=250G;
 }
 function log-time()
 {
