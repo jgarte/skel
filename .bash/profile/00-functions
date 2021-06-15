@@ -81,12 +81,12 @@ function upgrade-all()
 }
 function can-upgrade()
 {
-	if guix weather $1 >&2 && guix build $1
-	then
-		echo "finally upgrading $1!">&2
-	else
-		echo "--do-not-upgrade=$1"
-	fi
+  if guix weather $1 >&2 && guix build $1;
+  then
+    echo "finally upgrading $1!">&2;
+  else
+    echo "--do-not-upgrade=$1";
+  fi
 }
 function quick-upgrade()
 {
