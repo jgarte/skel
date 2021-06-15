@@ -62,9 +62,9 @@ function list-packages()
 
 function install-to()
 {
-	profile=$(profile-location $1)
-	shift
-	echo $@ | xargs -n1 guix install -p $profile
+  profile=$(profile-location $1);
+  shift;
+  echo $@ | xargs -n1 guix install -p $profile;
 }
 
 function remove-from()
