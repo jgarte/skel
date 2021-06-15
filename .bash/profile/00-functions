@@ -69,9 +69,9 @@ function install-to()
 
 function remove-from()
 {
-	profile=$(profile-location $1)
-	shift
-	echo $@ | xargs -n1 guix remove -p $profile
+  profile=$(profile-location $1);
+  shift;
+  echo $@ | xargs -n1 guix remove -p $profile;
 }
 
 function upgrade-all()
