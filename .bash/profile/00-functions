@@ -76,8 +76,8 @@ function remove-from()
 
 function upgrade-all()
 {
-	guix pull
-	guix package --list-profiles | xargs -n1 bash -c 'echo $0; guix upgrade -p $0'
+  guix pull;
+  guix package --list-profiles | xargs -n1 bash -c 'echo $0; guix upgrade -p $0';
 }
 function can-upgrade()
 {
