@@ -1,6 +1,5 @@
 
-for x in $(list-profiles | xargs -n1 | grep ^general)
-do
-	load-profile $x
+for x in $(list-profiles | xargs -n1 | grep ^general);
+do load-profile $x;
 done
 
