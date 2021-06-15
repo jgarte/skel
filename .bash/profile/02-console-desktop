@@ -1,11 +1,11 @@
-if test -v XAUTHORITY
-then
-	for x in $(list-profiles | xargs -n1 | grep ^desktop)
-	do
-		load-profile $x
-	done
-	export BROWSER=icecat
-	export EDITOR=vim
+if test -v XAUTHORITY;
+  then
+for x in $(list-profiles | xargs -n1 | grep ^desktop)
+  do
+  load-profile $x;
+  done
+  export BROWSER=icecat;
+  export EDITOR=vim;
 
 #anki & disown
 else
