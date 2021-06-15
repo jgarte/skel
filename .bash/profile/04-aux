@@ -1,10 +1,10 @@
 function umount-network(){
-echo link;
-umount ~/Documents/link
-umount ~/Documents/toon-link
-umount ~/Documents/mario
-umount ~/Documents/luigi
-umount ~/Documents/mobian
+  echo link;
+  umount ~/Documents/link;
+  umount ~/Documents/toon-link;
+  umount ~/Documents/mario;
+  umount ~/Documents/luigi;
+  umount ~/Documents/mobian;
 }
 function mount-network(){
   echo link;
