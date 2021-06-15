@@ -1,6 +1,6 @@
 cd ~/.skel;
 guix environment --ad-hoc git-minimal -- git restore .;
-guix environment --ad-hoc git -- git pull;
+guix environment --ad-hoc git openssh -- git pull;
 pwd
 ls -a | grep -v "\.\.\?$" | grep -v ".git$"
 #exit
@@ -16,5 +16,5 @@ do
 
   find $dir -type f -exec cp ~/{} {} ';';
 done;
-guix environment --ad-hoc git -- git pull;
+guix environment --ad-hoc git openssh -- git pull;
 guix environment --ad-hoc git-minimal -- git status;
