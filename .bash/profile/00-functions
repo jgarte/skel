@@ -1,14 +1,16 @@
 function profile-location()
 {
-	echo $HOME/.other-guix-profiles/$1
+  echo $HOME/.other-guix-profiles/$1;
 }
 
 function profile-exists()
 {
-	if test -L $(profile-location $1)
-		then return 0
-		else return 1
-	fi
+  if test -L $(profile-location $1);
+  then
+    return 0
+  else
+    return 1;
+  fi
 }
 
 function load-profile()
