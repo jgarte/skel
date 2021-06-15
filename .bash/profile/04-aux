@@ -28,3 +28,4 @@ function start-web-server()
 }
 export -f mount-network;
 export -f start-web-server;
+export -f umount-network;
