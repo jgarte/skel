@@ -125,7 +125,7 @@ function make-manifest()
       echo '(map symbol->string';
         echo "'(";
         for package in `list-packages $profile`;
-        do;
+        do
         echo $package;
         done
         echo ')))'
