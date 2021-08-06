@@ -1,9 +1,3 @@
-#Original
-#politics
-
-#Pat Gray Unleashed
-#https://feeds.megaphone.fm/BMDC5873188773
-
 #Ben Shapiro
 https://feeds.megaphone.fm/WWO8086402096
 
@@ -31,11 +25,20 @@ https://firstlibertybriefing.libsyn.com/rss
 #Enough
 https://feeds.megaphone.fm/WWO9953600871
 
-#Candace Owens
+#Candace Owens Show
 https://feeds.soundcloud.com/users/soundcloud:users:593344158/sounds.rss
+
+#Candace - Daily Wire
+https://feeds.megaphone.fm/WWO9847611358
 
 #Andrew Klavan
 https://feed.podbean.com/andrewklavanshow/feed.xml
+
+#YAF
+http://www.yaf.org/feed/podcast
+
+#glenn beck full
+#https://feeds.megaphone.fm/BMDC1147981467
 
 #Education
 
@@ -49,10 +52,10 @@ https://api.oyez.org/podcasts/oral-arguments/2015
 https://feeds.transistor.fm/thoughts-on-functional-programming-podcast-by-eric-normand
 
 #BYU Speeches
-https://speeches.byu.edu/feed/
+#https://speeches.byu.edu/feed/
 
 #Lunduke Show
-#http://vault.lunduke.com/LundukeShowMP3.xml
+http://lunduke.com/feed
 
 #Pinetalk Podcast
 https://www.pine64.org/feed/mp3/
@@ -62,6 +65,9 @@ https://www.pine64.org/feed/mp3/
 
 #General Conference
 https://psd-podcast.s3.amazonaws.com/XML/1-audio-eng.xml
+
+#Audacity to Podcast
+#https://theaudacitytopodcast.com/feed/
 
 #Quran
 #https://librivox.org/rss/13863
@@ -80,8 +86,59 @@ https://psd-podcast.s3.amazonaws.com/XML/1-audio-eng.xml
 
 #Audio Drama
 
+#WSBA
+https://terribleadventurers.com/?feed=podcast
+
+#star wars legends
+https://feeds.soundcloud.com/users/soundcloud:users:355170509/sounds.rss
+
+#Star Wars Radio Drama
+https://feeds.soundcloud.com/users/soundcloud:users:952187878/sounds.rss
+
+#conquest of an empire
+http://www.lionsmouthent.net/swconquest/feed/podcast/
+
+#entropy
+https://feeds.soundcloud.com/users/soundcloud:users:705972958/sounds.rss
+
+#What Lies Between Sleep
+https://www.whatliesbetweensleep.com/?feed=podcast
+
+#Hank the Cowdog
+https://feeds.simplecast.com/syZR7vjv
+
+#Story pirates
+https://feeds.megaphone.fm/storypirates
+
+#limetown
+http://feeds.megaphone.fm/PPY5621646923
+
+#station to station
+https://www.spreaker.com/show/2110458/episodes/feed
+
+#Staurday Story Circle
+https://feeds.megaphone.fm/MUTUAL4112686549
+
+#gm showcase
+https://feed.podbean.com/gmshowcase/feed.xml
+
+#Mission Rejected
+https://feeds.simplecast.com/yMwA0_RF
+
+#victoriocity
+https://victoriocity.libsyn.com/rss
+
+#Ordinary Epic
+https://theordinaryepic.libsyn.com/rss
+
+#Second Shift
+#http://www.secondshiftpodcast.com/xml/2shift.xml
+
+#Have Spellbook, Will Travel
+#https://www.spreaker.com/show/2936348/episodes/feed
+
 #Within the Wires
-#http://feeds.nightvalepresents.com/withinthewires
+http://feeds.nightvalepresents.com/withinthewires
 
 #Hit The Bricks
 #https://hitthebricks.libsyn.com/rss
@@ -93,7 +150,7 @@ https://psd-podcast.s3.amazonaws.com/XML/1-audio-eng.xml
 #https://rss.acast.com/marscorp
 
 #Alba Salix
-#https://rss.art19.com/alba-salix--royal-physician
+https://rss.art19.com/alba-salix--royal-physician
 
 #Civilized
 #https://rss.art19.com/civilized
@@ -104,32 +161,29 @@ https://psd-podcast.s3.amazonaws.com/XML/1-audio-eng.xml
 #The End of Time
 #https://rss.art19.com/the-end-of-time-and-other-bothers
 
-#WSBA
-https://terribleadventurers.com/?feed=podcast
+#polybus
+https://polybius.libsyn.com/rss
 
-#star wars legends
-#https://feeds.soundcloud.com/users/soundcloud:users:355170509/sounds.rss
+#The Table Round
+http://thetableround.libsyn.com/rss
 
-#conquest of an empire
-#http://www.lionsmouthent.net/swconquest/feed/podcast/
+#The Lost Tigers
+http://adventurelandmedia.libsyn.com/rss
 
-#Ordinary Epic
-#https://theordinaryepic.libsyn.com/rss
+#solve the murder
+https://www.solvethismurder.com/feed.xml
 
-#Second Shift
-#http://www.secondshiftpodcast.com/xml/2shift.xml
+#Silhouette Zero Star Wars Actual Play
+https://feed.podbean.com/silzero/feed.xml
 
-#What Lies Between Sleep
-#https://www.whatliesbetweensleep.com/?feed=podcast
+#The City Within the Walls
+https://feed.podbean.com/joshmonroesprojectalpha/feed.xml
 
-#Have Spellbook, Will Travel
-#https://www.spreaker.com/show/2936348/episodes/feed
+#No Space for Heroes
+https://feed.podbean.com/nospaceforheroes/feed.xml
 
-#Hank the Cowdog
-#https://feeds.simplecast.com/syZR7vjv
-
-#Mission Rejected
-#https://feeds.simplecast.com/yMwA0_RF
+#Book to New Worlds
+https://feed.podbean.com/voraces/feed.xml
 
 #Newsfeed
 
@@ -150,77 +204,15 @@ https://www.darthsanddroids.net/rss.xml
 #Friendship is Dragons
 http://friendshipisdragons.com/rss/
 
-#padding
+#Original
 #politics
 
-#Ben Shapiro
-#https://feeds.megaphone.fm/WWO8086402096
+#morning wire
+https://feeds.megaphone.fm/BENT5570899829
 
-#Glenn Beck
-#https://feeds.megaphone.fm/BMDC3567910388
+#debunked
+https://feeds.megaphone.fm/WWO6208681532
 
-#Stu Does America
-https://feeds.megaphone.fm/BMDC7674164347
-
-#Verdict
-https://feeds.megaphone.fm/TCZ9660009509
-
-#Babylon Bee Podcast
-https://babylonbee.libsyn.com/rss
-
-#First Liberty
-https://firstlibertybriefing.libsyn.com/rss
-
-#Enough
-https://feeds.megaphone.fm/WWO9953600871
-
-#Candace Owens
-https://feeds.soundcloud.com/users/soundcloud:users:593344158/sounds.rss
-
-#Andrew Klavan
-https://feed.podbean.com/andrewklavanshow/feed.xml
-
-#Education
-
-#Fanscription
-https://channelawesome.libsyn.com/rss
-
-#Supreme Court
-https://api.oyez.org/podcasts/oral-arguments/2015
-
-#Thoughts on Functional Programming
-https://feeds.transistor.fm/thoughts-on-functional-programming-podcast-by-eric-normand
-
-#BYU Speeches
-https://speeches.byu.edu/feed/
-
-#Pinetalk Podcast
-https://www.pine64.org/feed/mp3/
-
-#General Conference
-https://psd-podcast.s3.amazonaws.com/XML/1-audio-eng.xml
-
-#Audio Drama
-
-#WSBA
-https://terribleadventurers.com/?feed=podcast
-
-#Newsfeed
-
-#Purism News
-https://puri.sm/feed/
-
-#Babylon Bee News
-https://www.babylonbee.com/feed
-
-#Pine64 News
-https://www.pine64.org/feed/
-
-#web comics
-
-#Darths and Droids
-https://www.darthsanddroids.net/rss.xml
-
-#Friendship is Dragons
-http://friendshipisdragons.com/rss/
+#Pat Gray Unleashed
+https://feeds.megaphone.fm/BMDC5873188773
 
