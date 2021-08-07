@@ -2,7 +2,9 @@
 vo=fbdev2
 af=scaletempo=speed=tempo
 ao=pulse
+equalizer=0:0:0:0:0:0:0:0:0:0
 [vo.fbdev2]
-#quiet = 1
+quiet = 1
 zoom = 1
-xy = 1024
+#xy = 1024
+xy = 720
