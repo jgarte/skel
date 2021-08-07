@@ -13,7 +13,12 @@ for x in $(list-profiles | xargs -n1 | grep ^desktop)
   do
   load-profile $x;
   done
+  if test -x ~/.local/bin/browser
+  then
+  export BROWSER=~/.local/bin/browser;
+  else
   export BROWSER=w3m;
+  fi
   export PS1='\n\d \@\n\j jobs\n\u@\H on \l at \w \$ ';
 #if { tty | grep -q tty; }
   if  tty | grep -q tty;
