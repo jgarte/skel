@@ -1,0 +1,18 @@
+#guix environment --ad-hoc curl -- curl $@ | guix environment --ad-hoc html2text -- html2text -nobs >>~/pending-reads
+{
+echo '===================='
+echo $@;
+echo '===================='
+#guix environment --ad-hoc curl -- curl $@ | guix environment --ad-hoc html2text -- html2text -nobs -width 10000| sed -n "1,65d;/^[^*]/p;/^\*/q;"
+#guix environment --ad-hoc curl -- curl $@ | guix environment --ad-hoc html2text -- html2text -nobs -width 10000
+guix environment --ad-hoc curl -- curl $@ | guix environment --ad-hoc html2text -- html2text -nobs -width 10000 | sed '/^$/d'
+echo '********************'
+echo end $@
+echo '********************'
+for x in {1..100}; do echo; done;
+#espeak "Done getting $@"
+} >>~/pending-reads
+#&
+
+#guix environment --ad-hoc curl -- curl $@ | guix environment --ad-hoc html2text -- html2text -nobs | sed 1,70d | espeak
+
